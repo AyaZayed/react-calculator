@@ -1,0 +1,10 @@
+.page {
+  background-color: var(--main-background);
+  color: var(--text-color);
+  text-align: center;
+  height: 100vh;
+}
+
+.page h1 {
+  margin: 0;
+}
