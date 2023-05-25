@@ -2,7 +2,7 @@
   background-color: var(--main-background);
   color: var(--text-color);
   text-align: center;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.page .top h6 {
+  margin-right: 2rem;
+}
+
 .page .theme-switch {
   display: flex;
   align-items: center;
@@ -27,8 +31,8 @@
 
 .page .top,
 .page .calculator,
-.page .calculator .display {
-  width: 100%;
+.page .display {
+  width: 90%;
 }
 
 @media (min-width: 375px) {
@@ -36,7 +40,7 @@
   .page .top,
   .page .calculator,
   .page .display {
-    width: 16rem;
+    width: 18rem;
   }
 }
 
@@ -52,9 +56,10 @@
 
 .page .display {
   background-color: var(--screen-background);
-  padding: .5rem 1rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   text-align: right;
+  font-size: 32px;
 }
 
 .page .calculator {
@@ -75,13 +80,15 @@
   color: var(--text-color);
   font-weight: 700;
   font-size: 1.2rem;
-  padding: .5rem;
+  padding: .5rem 1rem;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  vertical-align: middle;
+}
 
+.page .calculator .button:hover {
+  background-color: var(--key-background-hover);
+  border-bottom: 5px solid var(--key-shadow-hover);
 }
 
 .page .calculator #clear,
@@ -91,10 +98,21 @@
   color: var(--secondary-text-color);
 }
 
+.page .calculator #clear:hover,
+.page .calculator #del:hover {
+  background-color: var(--del-reset-hover);
+  border-bottom: 5px solid var(--del-reset-shadow-hover);
+}
+
 .page .calculator #equals {
   background-color: var(--equals);
   border-bottom: 5px solid var(--equals-shadow);
   color: var(--secondary-text-color);
+}
+
+.page .calculator #equals:hover {
+  background-color: var(--equals-hover);
+  border-bottom: 5px solid var(--equals-shadow-hover);
 }
 
 .page[data-theme='blue'] .calculator .button {
@@ -110,7 +128,6 @@
 .page[data-theme='violet'] .calculator #equals {
   color: var(--third-text-color);
 }
-
 
 .page .calculator #clear,
 .page .calculator #equals {

@@ -1,13 +1,4 @@
 :root {
-  /* font stuff */
-  --font-size-basis: 1rem;
-  --type-scale: 1.5;
-  --h5: var(--font-size-basis);
-  --h4: calc(var(--h5) * var(--type-scale));
-  --h3: calc(var(--h4) * var(--type-scale));
-  --h2: calc(var(--h3) * var(--type-scale));
-  --h1: calc(var(--h2) * var(--type-scale));
-  --font-small: calc(0.667rem);
   --font-family: 'League Spartan', sans-serif;
 }
 
@@ -19,11 +10,17 @@
   --screen-background: hsl(224, 36%, 15%);
   /* keys */
   --del-reset: hsl(225, 21%, 49%);
+  --del-reset-hover: hsl(223.81deg 51.22% 75.88%);
   --del-reset-shadow: hsl(224, 28%, 35%);
+  --del-reset-shadow-hover: hsl(223.75deg 26.97% 34.9%);
   --equals: hsl(6, 63%, 50%);
+  --equals-hover: hsl(6.46deg 92.94% 66.67%);
   --equals-shadow: hsl(6, 70%, 34%);
+  --equals-shadow-hover: hsl(6.45deg 73.33% 32.35%);
   --key-background: hsl(30, 25%, 89%);
+  --key-background-hover: hsl(0deg 0% 100%);
   --key-shadow: hsl(28, 16%, 65%);
+  --key-shadow-hover: hsl(24.83deg 15.85% 64.12%);
   /* text */
   --secondary-text-color: hsl(221, 14%, 31%);
   --text-color: hsl(0, 0%, 100%);
@@ -37,11 +34,17 @@
   --screen-background: hsl(0, 0%, 93%);
   /* keys */
   --del-reset: hsl(185, 42%, 37%);
+  --del-reset-hover: hsl(185.27deg 40.81% 56.27%);
   --del-reset-shadow: hsl(185, 58%, 25%);
+  --del-reset-shadow-hover: hsl(186.4deg 55.56% 26.47%);
   --equals: hsl(25, 98%, 40%);
+  --equals-hover: hsl(25.03deg 100% 60.98%);
   --equals-shadow: hsl(25, 99%, 27%);
+  --equals-shadow-hover: hsl(25.4deg 98.56% 27.25%);
   --key-background: hsl(45, 7%, 89%);
+  --key-background-hover: hsl(0deg 0% 100%);
   --key-shadow: hsl(35, 11%, 61%);
+  --key-shadow-hover: hsl(36.52deg 11.44% 60.59%);
   /* text */
   --text-color: hsl(60, 10%, 19%);
   --secondary-text-color: hsl(0, 0%, 100%);
@@ -55,11 +58,17 @@
   --screen-background: hsl(268, 71%, 12%);
   /* keys */
   --del-reset: hsl(281, 89%, 26%);
+  --del-reset-hover: hsl(278.1deg 55.26% 44.71%);
   --del-reset-shadow: hsl(285, 91%, 52%);
+  --del-reset-shadow-hover: hsl(285.74deg 91.02% 51.96%);
   --equals: hsl(176, 100%, 44%);
+  --equals-hover: hsl(176.64deg 100% 79.02%);
   --equals-shadow: hsl(177, 92%, 70%);
+  --equals-shadow-hover: hsl(176.52deg 89.61% 69.8%);
   --key-background: hsl(268, 47%, 21%);
+  --key-background-hover: hsl(267.5deg 53.57% 43.92%);
   --key-shadow: hsl(290, 70%, 36%);
+  --key-shadow-hover: hsl(290.88deg 66.84% 36.67%);
   /* text */
   --text-color: hsl(52, 100%, 62%);
   --third-text-color: hsl(198, 20%, 13%);
@@ -74,7 +83,7 @@ body,
 }
 
 html {
-  font-size: 32px;
+  font-size: 20px;
   font-family: var(--font-family);
   font-weight: 700;
 }
@@ -84,10 +93,12 @@ ul {
   list-style: none;
 }
 
-/* ::-moz-selection {
-  background-color: var(--primary-color);
+::-moz-selection {
+  background-color: var(--equals);
+  color: var(--secondary-text-color);
 }
 
 ::selection {
-  background-color: var(--primary-color);
-} */
+  background-color: var(--equals);
+  color: var(--secondary-text-color);
+}
