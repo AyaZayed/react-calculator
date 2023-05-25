@@ -1,7 +1,7 @@
 :root {
   /* font stuff */
-  --font-size-basis: 32px;
-  --type-scale: 1.25;
+  --font-size-basis: 1rem;
+  --type-scale: 1.5;
   --h5: var(--font-size-basis);
   --h4: calc(var(--h5) * var(--type-scale));
   --h3: calc(var(--h4) * var(--type-scale));
@@ -18,12 +18,12 @@
   --keypad-background: hsl(223, 31%, 20%);
   --screen-background: hsl(224, 36%, 15%);
   /* keys */
-  --key-background: hsl(225, 21%, 49%);
-  --key-shadow: hsl(224, 28%, 35%);
-  --Red: hsl(6, 63%, 50%);
-  --Dark-red: hsl(6, 70%, 34%);
-  --Light-grayish-orange: hsl(30, 25%, 89%);
-  --Grayish-orange: hsl(28, 16%, 65%);
+  --del-reset: hsl(225, 21%, 49%);
+  --del-reset-shadow: hsl(224, 28%, 35%);
+  --equals: hsl(6, 63%, 50%);
+  --equals-shadow: hsl(6, 70%, 34%);
+  --key-background: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
   /* text */
   --secondary-text-color: hsl(221, 14%, 31%);
   --text-color: hsl(0, 0%, 100%);
@@ -36,12 +36,12 @@
   --keypad-background: hsl(0, 5%, 81%);
   --screen-background: hsl(0, 0%, 93%);
   /* keys */
-  --key-background: hsl(185, 42%, 37%);
-  --key-shadow: hsl(185, 58%, 25%);
-  --Orange: hsl(25, 98%, 40%);
-  --Dark-orange: hsl(25, 99%, 27%);
-  --Light-grayish-yellow: hsl(45, 7%, 89%);
-  --Dark-grayish-orange: hsl(35, 11%, 61%);
+  --del-reset: hsl(185, 42%, 37%);
+  --del-reset-shadow: hsl(185, 58%, 25%);
+  --equals: hsl(25, 98%, 40%);
+  --equals-shadow: hsl(25, 99%, 27%);
+  --key-background: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
   /* text */
   --text-color: hsl(60, 10%, 19%);
   --secondary-text-color: hsl(0, 0%, 100%);
@@ -54,12 +54,12 @@
   --keypad-background: hsl(268, 71%, 12%);
   --screen-background: hsl(268, 71%, 12%);
   /* keys */
-  --key-background: hsl(281, 89%, 26%);
-  --key-shadow: hsl(285, 91%, 52%);
-  --Pure-cyan: hsl(176, 100%, 44%);
-  --Soft-cyan: hsl(177, 92%, 70%);
-  --Very-dark-violet: hsl(268, 47%, 21%);
-  --Dark-magenta: hsl(290, 70%, 36%);
+  --del-reset: hsl(281, 89%, 26%);
+  --del-reset-shadow: hsl(285, 91%, 52%);
+  --equals: hsl(176, 100%, 44%);
+  --equals-shadow: hsl(177, 92%, 70%);
+  --key-background: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
   /* text */
   --text-color: hsl(52, 100%, 62%);
   --third-text-color: hsl(198, 20%, 13%);
@@ -74,7 +74,7 @@ body,
 }
 
 html {
-  font-size: 100%;
+  font-size: 32px;
   font-family: var(--font-family);
   font-weight: 700;
 }
