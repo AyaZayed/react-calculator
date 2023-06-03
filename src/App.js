@@ -15,13 +15,17 @@ export default function App() {
         <h1>calc</h1>
         <div className="theme-switch">
           <h6>THEME</h6>
-          <div>
-            <label htmlFor='blue'>1</label>
-            <input type='radio' id='blue' name='theme' value='blue' checked={theme === 'blue'} onChange={(e) => { toggleTheme(e) }} />
-            <label htmlFor='yellow'>2</label>
-            <input type='radio' id='yellow' name='theme' value='yellow' checked={theme === 'yellow'} onChange={toggleTheme} />
-            <label htmlFor='violet'>3</label>
-            <input type='radio' id='violet' name='theme' value='violet' checked={theme === 'violet'} onChange={toggleTheme} />
+          <div className='options-wrapper'>
+            <div className='labels'>
+              <label htmlFor="blue">1</label>
+              <label htmlFor="yellow">2</label>
+              <label htmlFor="violet">3</label>
+            </div>
+            <div className='options'>
+              <button className="blue" value="blue" onClick={toggleTheme}></button>
+              <button className="yellow" value="yellow" onClick={toggleTheme}></button>
+              <button className="violet" value="violet" onClick={toggleTheme}></button>
+            </div>
           </div>
         </div>
       </div>
